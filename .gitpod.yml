@@ -7,7 +7,7 @@ tasks:
 
 ports:
   - port: 8080
-  - openMode: open
+    onOpen: open-preview
 
 vscode:
   extensions:
