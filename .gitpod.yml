@@ -1,14 +1,8 @@
 image:
-  file: Dockerfile
+  file: .gitpod.Dockerfile
 
 tasks:
-  - init: 'echo "Preparing your Gitpod environment..."'
-  - command: 'echo "Ready to run Nextflow pipelines!"'
-
-ports:
-  - port: 8080
-    onOpen: open-preview
-
-vscode:
-  extensions:
-    - ms-kubernetes-tools.vscode-kubernetes-tools
+  - init: |
+      wget -qO- https://get.nextflow.io | bash
+      sudo mv nextflow /usr/local/bin/
+    command: nextflow run main.nf
