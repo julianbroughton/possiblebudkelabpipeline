@@ -1,0 +1,14 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - init: 'echo "Preparing your Gitpod environment..."'
+  - command: 'echo "Ready to run Nextflow pipelines!"'
+
+ports:
+  - port: 8080
+  - openMode: open
+
+vscode:
+  extensions:
+    - ms-kubernetes-tools.vscode-kubernetes-tools
