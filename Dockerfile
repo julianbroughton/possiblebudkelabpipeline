@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install basics
 RUN apt-get update && \
-    apt-get install -y wget unzip curl python3-pip default-jdk
+    apt-get install -y wget unzip curl python3-pip default-jdk git
 
 # Install Nextflow
 RUN curl -s https://get.nextflow.io | bash && \
